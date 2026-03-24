@@ -24,18 +24,17 @@ export function HeroSection() {
         transition={{ duration: 1.8, ease: "easeOut" }}
         className="absolute inset-0 overflow-hidden"
       >
-        {/* YouTube background video */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden z-[1]">
-          <iframe
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none"
-            style={{ width: "300%", height: "300%", border: 0 }}
-            src="https://www.youtube.com/embed/iUtnZpzkbG8?autoplay=1&mute=1&loop=1&playlist=iUtnZpzkbG8&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&iv_load_policy=3&playsinline=1&enablejsapi=1"
-            title="Hero background video"
-            allow="autoplay; encrypted-media"
-            frameBorder="0"
-          />
-        </div>
-        {/* Fallback image behind iframe */}
+        {/* Background video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-[1]"
+          src="https://github.com/piyush9801/scrapq-site/releases/download/v1.0.0/scrap.Q._01.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        />
+        {/* Fallback image while video loads */}
         <ImageWithFallback src={imgHero} alt="Sustainable landscape" className="absolute inset-0 w-full h-full object-cover z-0" />
         <div className="absolute inset-0 bg-black/40 z-[2]" />
         <div className="absolute inset-0 z-[2]" style={{ background: "radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.6) 100%)" }} />
