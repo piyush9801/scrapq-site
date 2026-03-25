@@ -7,7 +7,7 @@ import { font, sans, sage } from "../lib/constants";
 import { ArrowRight, Leaf, Factory, BarChart3, Recycle, Building2, Cpu } from "lucide-react";
 import sqRecycleHub from "@/assets/sq-recycle-hub.png";
 import sqRor from "@/assets/sq-ror.png";
-import sqCirculomony from "@/assets/sq-circulomony.png";
+import sqCirculomony from "@/assets/sq-circulomony.jpeg";
 import sqCarbonTech from "@/assets/sq-carbon-tech.png";
 
 const services = [
