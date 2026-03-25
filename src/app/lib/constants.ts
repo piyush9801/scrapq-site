@@ -9,6 +9,8 @@ export const scrapqLogo = scrapqLogoSrc;
 export const imgCard3 = "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080";
 import glassBottleSrc from "@/assets/glass-bottle.png";
 export const imgGlassBottle = glassBottleSrc;
+import circularEconomySrc from "@/assets/circular-economy.jpeg";
+export const imgCircularEconomy = circularEconomySrc;
 
 /* ─── IMAGE URLS ─── */
 export const imgHero = "https://images.unsplash.com/photo-1764141738717-896b3365c196?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGxhbmRzY2FwZSUyMHN1c3RhaW5hYmxlJTIwbmF0dXJlJTIwbW9ybmluZyUyMGxpZ2h0fGVufDF8fHx8MTc3MjcwMjcyMHww&ixlib=rb-4.1.0&q=80&w=1080";
@@ -17,7 +19,7 @@ export const imgCard2 = "https://images.unsplash.com/photo-1635716435671-81c2779
 export const imgBanner = "https://images.unsplash.com/photo-1759044420896-f947fa7505c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZXJpYWwlMjBmb3Jlc3QlMjBjYW5vcHklMjBncmVlbiUyMHN1c3RhaW5hYmxlfGVufDF8fHx8MTc3MjcwMjcyNXww&ixlib=rb-4.1.0&q=80&w=1080";
 export const imgDualA = "https://images.unsplash.com/photo-1766671965039-8bc8687390ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGhpbGxzJTIwZGF3biUyMG1pc3R5JTIwbGFuZHNjYXBlJTIwSW5kaWF8ZW58MXx8fHwxNzcyNzAyNzIxfDA&ixlib=rb-4.1.0&q=80&w=1080";
 export const imgDualB = "https://images.unsplash.com/photo-1758599668508-d8ec9eca1be3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHNvcnRpbmclMjByZWN5Y2xhYmxlJTIwd2FzdGUlMjBjb21tdW5pdHl8ZW58MXx8fHwxNzcyNzAyNzIxfDA&ixlib=rb-4.1.0&q=80&w=1080";
-export const imgThingA = "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080";
+export const imgThingA = imgCircularEconomy;
 export const imgThingB = "https://images.unsplash.com/photo-1712852519360-c37b75a0eddf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMGNpdHklMjBzdHJlZXQlMjBzdXN0YWluYWJsZSUyMHVyYmFuJTIwSW5kaWF8ZW58MXx8fHwxNzcyNzAyNzI1fDA&ixlib=rb-4.1.0&q=80&w=1080";
 export const imgThingC = "https://images.unsplash.com/photo-1759738102266-bab1d130b557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjB3b3JrZXJzJTIwdGVhbXdvcmslMjBvdXRkb29yJTIwSW5kaWF8ZW58MXx8fHwxNzcyNzAyNzI2fDA&ixlib=rb-4.1.0&q=80&w=1080";
 export const imgWestern = "https://images.unsplash.com/photo-1661177408386-d17ed2ededa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJib24lMjBmb290cHJpbnQlMjBuYXR1cmUlMjBmb3Jlc3QlMjBhZXJpYWx8ZW58MXx8fHwxNzcyNzAyMzQwfDA&ixlib=rb-4.1.0&q=80&w=1080";
