@@ -95,7 +95,7 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
       style={{ height: `${(count + 1) * 100}vh` }}
     >
       {/* Sticky pinned viewport */}
-      <div className="sticky top-0 h-screen bg-[#171411] overflow-hidden flex flex-col">
+      <div className="sticky top-0 h-screen bg-[#faf8f5] overflow-hidden flex flex-col">
         {/* Ambient background glow */}
         <motion.div
           className="absolute inset-0 opacity-20 pointer-events-none"
@@ -117,7 +117,7 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
               animate={{ opacity: 0.035, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -50, scale: 0.85 }}
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              style={{ fontFamily: font, fontSize: "clamp(180px, 26vw, 380px)", fontWeight: 300, lineHeight: 1, color: "#ffffff", display: "block" }}
+              style={{ fontFamily: font, fontSize: "clamp(180px, 26vw, 380px)", fontWeight: 300, lineHeight: 1, color: "#171411", display: "block" }}
             >
               {String(active + 1).padStart(2, "0")}
             </motion.span>
@@ -138,19 +138,19 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
                 <p className="uppercase tracking-[0.2em] mb-1.5" style={{ fontFamily: sans, fontSize: "11px", color: sage, fontWeight: 500 }}>
                   <TextScramble text="Materials We Handle" inView={inView} />
                 </p>
-                <h2 style={{ fontFamily: font, fontSize: "clamp(26px, 3.8vw, 44px)", color: "#ffffff", lineHeight: 1.15 }}>
+                <h2 style={{ fontFamily: font, fontSize: "clamp(26px, 3.8vw, 44px)", color: "#171411", lineHeight: 1.15 }}>
                   What We Recycle
                 </h2>
               </div>
               {/* Scroll progress indicator */}
               <div className="flex items-center gap-3">
-                <span style={{ fontFamily: sans, fontSize: "12px", color: "rgba(255,255,255,0.4)", fontWeight: 500 }}>
+                <span style={{ fontFamily: sans, fontSize: "12px", color: "rgba(23,20,17,0.4)", fontWeight: 500 }}>
                   {String(active + 1).padStart(2, "0")}
                 </span>
-                <div className="w-24 h-[2px] rounded-full bg-white/10 overflow-hidden">
+                <div className="w-24 h-[2px] rounded-full bg-black/10 overflow-hidden">
                   <motion.div className="h-full rounded-full" style={{ backgroundColor: sage, scaleX: smoothProgress, transformOrigin: "left" }} />
                 </div>
-                <span style={{ fontFamily: sans, fontSize: "12px", color: "rgba(255,255,255,0.4)", fontWeight: 500 }}>
+                <span style={{ fontFamily: sans, fontSize: "12px", color: "rgba(23,20,17,0.4)", fontWeight: 500 }}>
                   {String(recycleCategories.length).padStart(2, "0")}
                 </span>
               </div>
@@ -184,7 +184,7 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
                     <div
                       className={`relative overflow-hidden rounded-full transition-all duration-500 ${isActive ? "w-[56px] h-[56px] lg:w-[68px] lg:h-[68px]" : "w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]"}`}
                       style={{
-                        outline: isActive ? `2px solid ${sage}` : "1px solid rgba(255,255,255,0.12)",
+                        outline: isActive ? `2px solid ${sage}` : "1px solid rgba(23,20,17,0.12)",
                         outlineOffset: isActive ? "3px" : "0px",
                       }}
                     >
@@ -193,7 +193,7 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
                         alt={c.label}
                         className={`w-full h-full object-cover transition-all duration-500 ${isActive ? "scale-110" : "grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-75"}`}
                       />
-                      <div className={`absolute inset-0 transition-all duration-300 ${isActive ? "bg-black/10" : "bg-black/35 group-hover:bg-black/15"}`} />
+                      <div className={`absolute inset-0 transition-all duration-300 ${isActive ? "bg-black/10" : "bg-black/25 group-hover:bg-black/10"}`} />
                     </div>
                     <AnimatePresence>
                       {isActive && (
@@ -241,8 +241,8 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
                 </motion.div>
 
                 {/* Gradient overlays */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#171411]/95 via-[#171411]/50 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/85 via-transparent to-[#171411]/30" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#faf8f5]/95 via-[#faf8f5]/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#faf8f5]/85 via-transparent to-[#faf8f5]/30" />
 
                 {/* Content overlay — staggered scroll-reveal */}
                 <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-10 lg:p-14">
@@ -270,7 +270,7 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
                       initial={{ y: 25, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-                      style={{ fontFamily: font, fontSize: "clamp(28px, 4vw, 48px)", color: "#ffffff", lineHeight: 1.1, marginBottom: "14px" }}
+                      style={{ fontFamily: font, fontSize: "clamp(28px, 4vw, 48px)", color: "#171411", lineHeight: 1.1, marginBottom: "14px" }}
                     >
                       {cat.title}
                     </motion.h3>
@@ -290,7 +290,7 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.55, delay: 0.25 }}
                       className="mb-3 hidden sm:block"
-                      style={{ fontFamily: font, fontSize: "15px", lineHeight: 1.75, color: "#ffffff", opacity: 0.85 }}
+                      style={{ fontFamily: font, fontSize: "15px", lineHeight: 1.75, color: "#171411", opacity: 0.85 }}
                     >
                       {cat.desc}
                     </motion.p>
@@ -316,19 +316,19 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
                       {cat.price && (
                         <div
                           className="px-5 py-2.5 rounded-2xl"
-                          style={{ backgroundColor: "rgba(255,255,255,0.08)", backdropFilter: "blur(12px)", border: "1px solid rgba(255,255,255,0.1)" }}
+                          style={{ backgroundColor: "rgba(23,20,17,0.06)", backdropFilter: "blur(12px)", border: "1px solid rgba(23,20,17,0.1)" }}
                         >
-                          <span style={{ fontFamily: sans, fontSize: "11px", opacity: 0.55, color: "#ffffff" }}>Rs. </span>
-                          <span style={{ fontFamily: font, fontSize: "clamp(28px, 3vw, 38px)", fontWeight: 300, lineHeight: 1, color: "#ffffff" }}>
+                          <span style={{ fontFamily: sans, fontSize: "11px", opacity: 0.55, color: "#171411" }}>Rs. </span>
+                          <span style={{ fontFamily: font, fontSize: "clamp(28px, 3vw, 38px)", fontWeight: 300, lineHeight: 1, color: "#171411" }}>
                             {cat.price}
                           </span>
-                          <span style={{ fontFamily: sans, fontSize: "12px", opacity: 0.55, color: "#ffffff" }}> /Kg</span>
+                          <span style={{ fontFamily: sans, fontSize: "12px", opacity: 0.55, color: "#171411" }}> /Kg</span>
                         </div>
                       )}
                       <motion.button
-                        whileHover={{ scale: 1.05, backgroundColor: "#ffffff", color: "#171411" }}
+                        whileHover={{ scale: 1.05, backgroundColor: "#171411", color: "#faf8f5" }}
                         whileTap={{ scale: 0.97 }}
-                        className="px-7 py-3 rounded-full border border-white/25 text-white cursor-pointer transition-colors duration-300"
+                        className="px-7 py-3 rounded-full border border-[#171411]/25 text-[#171411] cursor-pointer transition-colors duration-300"
                         style={{ fontFamily: sans, fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.05em", backdropFilter: "blur(8px)" }}
                       >
                         Schedule Pickup →
@@ -347,7 +347,7 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
                     >
                       <div
                         className={`rounded-full transition-all duration-300 ${active === i ? "h-7 w-[5px]" : "h-[5px] w-[5px] group-hover:bg-white/50"}`}
-                        style={{ backgroundColor: active === i ? sage : "rgba(255,255,255,0.25)" }}
+                        style={{ backgroundColor: active === i ? sage : "rgba(23,20,17,0.25)" }}
                       />
                     </button>
                   ))}
@@ -359,9 +359,9 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
                   animate={{ opacity: active === 0 ? 0.5 : 0 }}
                   transition={{ duration: 0.4 }}
                 >
-                  <span style={{ fontFamily: sans, fontSize: "9px", color: "#ffffff", letterSpacing: "0.15em", textTransform: "uppercase" }}>Scroll</span>
+                  <span style={{ fontFamily: sans, fontSize: "9px", color: "#171411", letterSpacing: "0.15em", textTransform: "uppercase" }}>Scroll</span>
                   <motion.div
-                    className="w-[1px] bg-white/30"
+                    className="w-[1px] bg-[#171411]/30"
                     animate={{ height: [12, 24, 12] }}
                     transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
                   />
@@ -380,7 +380,7 @@ export function WhatWeRecycleScrollytelling({ recycleCategories }: { recycleCate
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.3 }}
-              style={{ fontFamily: font, fontSize: "13.5px", lineHeight: 1.65, color: "#ffffff", opacity: 0.75 }}
+              style={{ fontFamily: font, fontSize: "13.5px", lineHeight: 1.65, color: "#171411", opacity: 0.75 }}
             >
               {cat.desc}
             </motion.p>

@@ -5,6 +5,7 @@ import { FadeInOnScroll, TextScramble, BookAVisitButton } from "./shared";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { font, sans, sage } from "../lib/constants";
 import { ArrowRight, Leaf, Factory, BarChart3, Recycle, Building2, Cpu } from "lucide-react";
+import { Link } from "react-router";
 import sqRecycleHub from "@/assets/sq-recycle-hub.png";
 import sqRor from "@/assets/sq-ror.png";
 import sqCirculomony from "@/assets/sq-circulomony.jpeg";
@@ -12,6 +13,7 @@ import sqCarbonTech from "@/assets/sq-carbon-tech.png";
 
 const services = [
   {
+    slug: "sq-recycle-hub",
     title: "SQ Recycle HUB",
     subtitle: "Driving Towards Zero Landfills",
     desc: "Stops recyclable waste at the source — households, SMBs, corporates, and industries — ensuring it never reaches landfills. A one-stop sustainability platform transforming 100+ recyclable materials into valuable resources.",
@@ -19,6 +21,7 @@ const services = [
     icon: Recycle,
   },
   {
+    slug: "sq-ror",
     title: "SQ RoR",
     subtitle: "Recovery of Recyclables from MRFs",
     desc: "Innovative Material Recovery Facilities that reclaim recyclables from landfills, railway stations, events, and urban hubs — cutting landfill dependency while fueling the zero-waste mission.",
@@ -26,6 +29,7 @@ const services = [
     icon: Factory,
   },
   {
+    slug: "sq-circulomony",
     title: "SQ Circulomony",
     subtitle: "True Epitome of a Circular Economy",
     desc: "A people-powered model that ensures fair earnings across the entire ecosystem — consumers, rag pickers, kabadiwalas, retailers, and wholesalers. Driving a resilient and inclusive green economy.",
@@ -33,6 +37,7 @@ const services = [
     icon: Leaf,
   },
   {
+    slug: "sq-carbon-tech",
     title: "SQ Carbon Tech",
     subtitle: "Tech to calculate carbon footprint",
     desc: "Quantifies recycled carbon footprint, enlightens consumers, and empowers industries toward minimal emissions, nurturing a greener world.",
@@ -40,6 +45,7 @@ const services = [
     icon: BarChart3,
   },
   {
+    slug: "sq-zero-carbon",
     title: "SQ Zero Carbon",
     subtitle: "Net zero through re-cycling",
     desc: "Aids industries in attaining their net-zero carbon & EPR objectives, promoting sustainability and eco-friendliness through our solutions.",
@@ -47,6 +53,7 @@ const services = [
     icon: Building2,
   },
   {
+    slug: "sq-rrr",
     title: "SQ RRR",
     subtitle: "Reduce · Reuse · Recycle Centers",
     desc: "EcoStations enabling effortless e-waste recycling, reduction, and reuse for consumers, fostering environmental stewardship and resource efficiency.",
@@ -280,7 +287,9 @@ export function WhatWeDoSection() {
 
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
           {services.map((s, i) => (
-            <ServiceCard key={s.title} service={s} index={i} />
+            <Link key={s.title} to={`/services/${s.slug}`} className="block">
+              <ServiceCard service={s} index={i} />
+            </Link>
           ))}
         </div>
 
